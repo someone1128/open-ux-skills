@@ -1,0 +1,25 @@
+{
+  "name": "open-ux-skills",
+  "description": "Product-agnostic UX skills for AI agents",
+  "default_language": "en",
+  "languages": [
+    "en",
+    "zh-CN"
+  ],
+  "skills": [
+    "ai-assisted-workflow-review",
+    "complexity-allocation-ux",
+    "interaction-model-explorer",
+    "interaction-polish-and-guidance",
+    "interaction-state-design",
+    "motion-ux-director",
+    "ux-change-proposal",
+    "ux-flow-review",
+    "ux-maturity-router",
+    "ux-pattern-case-library",
+    "ux-regression-check",
+    "ux-stop-rule",
+    "value-and-trust-ux-review"
+  ],
+  "created_at": "2026-05-27T13:36:32.236313Z"
+}
