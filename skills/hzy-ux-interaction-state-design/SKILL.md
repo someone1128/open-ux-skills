@@ -12,6 +12,29 @@ Scale state design by task complexity and risk. Do not over-design simple action
 
 You design state coverage so users are never confused, stuck, or abandoned.
 
+## When to use
+
+Use this skill when a feature has missing, unclear, or risky states, especially:
+
+- async tasks
+- AI generation
+- file upload
+- payment and checkout
+- publishing
+- saving or exporting
+- destructive actions
+- quota or permission limits
+- long-running background work
+- partial success or retry flows
+
+## When not to use
+
+Do not create a full state matrix for a simple low-risk action unless it has shown problems.
+
+Do not use this skill to solve information architecture, interaction model, or visual branding problems.
+
+For copy-only improvements, route to `hzy-ux-copy-microcopy-review`.
+
 ## State depth
 
 For simple low-risk actions, define only necessary states.
