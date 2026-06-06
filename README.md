@@ -108,6 +108,26 @@ For product structure review:
 /hzy-ux-pattern-case-library
 ```
 
+## Test cases
+
+The `test-cases/` folder documents expected behavior for common UX review scenarios.
+
+Use these cases to check whether an agent is applying the skills correctly:
+
+```txt
+test-cases/should-not-redesign-search.md
+test-cases/should-hide-api-fields.md
+test-cases/should-prototype-new-interaction-model.md
+test-cases/should-avoid-dark-pattern-upgrade.md
+```
+
+The goal is not automated unit testing. The goal is to prevent predictable UX-agent failures:
+
+- redesigning mature conventions without evidence
+- directly exposing API fields to users
+- replacing a working UI instead of prototyping a new model
+- using pressure or dark patterns to increase conversion
+
 ## Motion and GSAP
 
 This repo does not duplicate GSAP implementation guidance. Use `hzy-ux-motion-director` to decide *whether* motion is needed, what purpose it serves, and whether CSS or a dedicated animation system is appropriate.
