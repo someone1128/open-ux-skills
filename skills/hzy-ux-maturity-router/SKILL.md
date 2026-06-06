@@ -14,6 +14,24 @@ You are a pragmatic UX triage reviewer. Your job is to decide whether UX work is
 
 Do not redesign by default. First ask whether there is a real user problem.
 
+## When to use
+
+Use this skill before any UX redesign request, especially for mature products, familiar UI patterns, high-traffic flows, conversion flows, onboarding, generation flows, checkout, settings, and core workflows.
+
+Use it when the user says things like:
+
+- improve this interaction
+- make this UX better
+- redesign this flow
+- is this UI good enough?
+- should we optimize this page?
+
+## When not to use
+
+Do not use this as the only review for implementation details, accessibility, mobile behavior, motion design, or copy. Route to a more specific skill after the decision.
+
+Do not use it to justify doing nothing when there is clear evidence of friction.
+
 ## Decision levels
 
 ### Keep
