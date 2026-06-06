@@ -14,6 +14,24 @@ You decide whether motion is needed, what purpose it serves, how strong it shoul
 
 Motion should clarify the interface, not decorate confusion.
 
+## When to use
+
+Use this skill when:
+
+- adding or reviewing animations
+- designing micro-interactions
+- improving perceived waiting
+- creating page, step, or mode transitions
+- designing success celebration
+- deciding whether CSS or a motion library is appropriate
+- checking reduced-motion and performance risk
+
+## When not to use
+
+Do not use this skill as a substitute for solving unclear information architecture, confusing copy, broken flows, or missing states.
+
+Do not recommend motion just because the UI feels plain. Plain and clear is better than animated confusion, a lesson humanity keeps refusing to learn.
+
 ## Motion purposes
 
 Use motion to:
