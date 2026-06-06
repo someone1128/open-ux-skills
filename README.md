@@ -6,6 +6,8 @@ These skills help an agent review, improve, and govern interaction design withou
 
 Default language: **English**. Chinese is supported when requested.
 
+All skill names use the `hzy-ux-` prefix so they are easy to search, filter, and trigger.
+
 ## What this is
 
 This repository contains reusable UX skills for:
@@ -17,6 +19,7 @@ This repository contains reusable UX skills for:
 - designing states, feedback, guidance, and motion
 - reviewing AI-assisted workflows
 - improving value clarity and trust
+- reviewing accessibility, mobile UX, information architecture, and microcopy
 - creating bounded UX change proposals
 - checking UX regressions after implementation
 
@@ -32,61 +35,82 @@ They are less reliable at deciding whether the interaction model is right, wheth
 
 | Skill | Purpose |
 |---|---|
-| `ux-maturity-router` | Decide whether to keep, polish, optimize, prototype, or redesign. |
-| `ux-stop-rule` | Prevent unnecessary redesign of familiar, working UI patterns. |
-| `interaction-model-explorer` | Explore better interaction models beyond the current UI. |
-| `ux-flow-review` | Review the full user path from intent to outcome. |
-| `complexity-allocation-ux` | Allocate complexity instead of blindly hiding it. |
-| `interaction-state-design` | Design appropriate UI states based on task risk and complexity. |
-| `interaction-polish-and-guidance` | Improve feedback, micro-interactions, helper text, and guidance. |
-| `motion-ux-director` | Decide whether motion is needed and how strong it should be. |
-| `ux-pattern-case-library` | Reference reusable UX patterns without mechanically applying them. |
-| `ai-assisted-workflow-review` | Review AI-assisted workflows beyond chat-only agents. |
-| `value-and-trust-ux-review` | Improve pricing, quota, upgrade, payment, and trust UX without dark patterns. |
-| `ux-change-proposal` | Convert UX findings into bounded implementation proposals. |
-| `ux-regression-check` | Check whether a UX change solved the original problem without creating new ones. |
+| `hzy-ux-maturity-router` | Decide whether to keep, polish, optimize, prototype, or redesign. |
+| `hzy-ux-stop-rule` | Prevent unnecessary redesign of familiar, working UI patterns. |
+| `hzy-ux-interaction-model-explorer` | Explore better interaction models beyond the current UI. |
+| `hzy-ux-flow-review` | Review the full user path from intent to outcome. |
+| `hzy-ux-complexity-allocation` | Allocate complexity instead of blindly hiding it. |
+| `hzy-ux-interaction-state-design` | Design appropriate UI states based on task risk and complexity. |
+| `hzy-ux-interaction-polish-guidance` | Improve feedback, micro-interactions, helper text, and guidance. |
+| `hzy-ux-motion-director` | Decide whether motion is needed and how strong it should be. |
+| `hzy-ux-pattern-case-library` | Reference reusable UX patterns without mechanically applying them. |
+| `hzy-ux-ai-assisted-workflow-review` | Review AI-assisted workflows beyond chat-only agents. |
+| `hzy-ux-value-trust-review` | Improve pricing, quota, upgrade, payment, and trust UX without dark patterns. |
+| `hzy-ux-change-proposal` | Convert UX findings into bounded implementation proposals. |
+| `hzy-ux-regression-check` | Check whether a UX change solved the original problem without creating new ones. |
+| `hzy-ux-accessibility-review` | Review accessibility, keyboard use, focus, contrast, screen reader support, and reduced motion. |
+| `hzy-ux-mobile-responsive-review` | Review mobile interaction, touch targets, keyboard overlap, responsive layout, and small-screen behavior. |
+| `hzy-ux-information-architecture-review` | Review navigation, grouping, naming, hierarchy, feature organization, and user mental models. |
+| `hzy-ux-copy-microcopy-review` | Review button labels, helper text, empty states, errors, success messages, tooltips, and high-risk copy. |
 
 ## Recommended workflow
 
 For mature products:
 
 ```txt
-/ux-maturity-router
+/hzy-ux-maturity-router
 ↓
-/ux-stop-rule when the UI may already be good
+/hzy-ux-stop-rule when the UI may already be good
 ↓
-/interaction-model-explorer if a new task model may unlock value
+/hzy-ux-interaction-model-explorer if a new task model may unlock value
 ↓
 specific review skill
 ↓
-/ux-change-proposal
+/hzy-ux-change-proposal
 ↓
 implementation
 ↓
-/ux-regression-check
+/hzy-ux-regression-check
 ```
 
 For new or complex features:
 
 ```txt
-/interaction-model-explorer
+/hzy-ux-interaction-model-explorer
 ↓
-/ux-flow-review
+/hzy-ux-flow-review
 ↓
-/complexity-allocation-ux
+/hzy-ux-complexity-allocation
 ↓
-/interaction-state-design
+/hzy-ux-interaction-state-design
 ↓
-/motion-ux-director if animation is involved
+/hzy-ux-motion-director if animation is involved
 ↓
-/ux-change-proposal
+/hzy-ux-change-proposal
 ↓
-/ux-regression-check
+/hzy-ux-regression-check
+```
+
+For UI quality review:
+
+```txt
+/hzy-ux-accessibility-review
+/hzy-ux-mobile-responsive-review
+/hzy-ux-copy-microcopy-review
+/hzy-ux-regression-check
+```
+
+For product structure review:
+
+```txt
+/hzy-ux-information-architecture-review
+/hzy-ux-flow-review
+/hzy-ux-pattern-case-library
 ```
 
 ## Motion and GSAP
 
-This repo does not duplicate GSAP implementation guidance. Use `motion-ux-director` to decide *whether* motion is needed, what purpose it serves, and whether CSS or a dedicated animation system is appropriate.
+This repo does not duplicate GSAP implementation guidance. Use `hzy-ux-motion-director` to decide *whether* motion is needed, what purpose it serves, and whether CSS or a dedicated animation system is appropriate.
 
 For implementation, consider the official GSAP AI skills when advanced timelines, ScrollTrigger, React integration, plugins, or performance guidance are needed. The official `greensock/gsap-skills` repository describes itself as official AI skills for GSAP and documents installation via `npx skills add https://github.com/greensock/gsap-skills`. See the repository for current instructions.
 
@@ -114,12 +138,16 @@ Or copy selected skill folders into your project-level skill directory.
 8. Motion should clarify, not decorate confusion.
 9. Conversion must not rely on pressure, hidden costs, or dark patterns.
 10. Every meaningful UX change should solve a real user problem.
+11. Accessibility and mobile behavior are not optional decoration.
+12. Copy is part of interaction design, not the leftovers after UI work.
 
 ---
 
 # 中文说明
 
 这是一个**通用交互设计 Skills 仓库**，默认英文，支持中文。
+
+所有 Skill 都使用 `hzy-ux-` 统一前缀，方便搜索和筛选。
 
 它不绑定任何具体产品、品牌、域名或业务场景。案例可以来自 AI 图片、AI 视频、AI 音乐、AI 写作、SaaS、社区、编辑器、创作工具等，但不能把某一种产品形态当成默认答案。
 
@@ -149,7 +177,7 @@ Or copy selected skill folders into your project-level skill directory.
 成熟产品先用：
 
 ```txt
-/ux-maturity-router
+/hzy-ux-maturity-router
 ```
 
 不要一上来就重设计。人类已经做了够多无意义改版，别让 AI 也加入拆墙队。
