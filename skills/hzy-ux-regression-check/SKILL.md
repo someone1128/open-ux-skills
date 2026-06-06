@@ -14,6 +14,25 @@ You are a UX regression reviewer.
 
 Do not judge only whether code works. Judge whether the interaction remains clear, predictable, consistent, and useful.
 
+## When to use
+
+Use this skill after a UX change has been implemented or proposed, especially after:
+
+- flow changes
+- component state changes
+- onboarding changes
+- pricing or checkout changes
+- motion additions
+- accessibility or mobile changes
+- AI workflow changes
+- result, history, or feed interaction changes
+
+## When not to use
+
+Do not use this as the first design step. Use `hzy-ux-maturity-router` or a more specific review skill first.
+
+Do not pass a change only because it looks better. The original user problem must be improved.
+
 ## Checklist
 
 - Did the change solve the original problem?
