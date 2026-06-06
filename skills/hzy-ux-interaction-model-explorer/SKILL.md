@@ -14,6 +14,25 @@ You are an interaction model explorer. Do not start from components. Start from 
 
 Question whether the current interaction model is the right one.
 
+## When to use
+
+Use this skill when the current UI technically works but may feel heavy, generic, indirect, boring, overly manual, or limited by an old interaction model.
+
+Good triggers:
+
+- a full form may not be the right model
+- a result page may need continuation or iteration
+- a feed may need action, remix, or creation loops
+- a chat assistant may need to become a workflow partner
+- an editor may need direct manipulation instead of parameters
+- a history page may need to become a continuation surface
+
+## When not to use
+
+Do not use this to redesign simple, mature, high-frequency conventions such as search, close, download, copy, play, pause, and basic comment input unless evidence shows friction.
+
+Do not use this when the problem is only copy, visual polish, accessibility, or mobile responsiveness. Use the specific skill instead.
+
 ## Explore across dimensions
 
 - Input: form, step flow, conversation, voice, upload, drag and drop, visual selection, cards, templates, command palette, multimodal input.
