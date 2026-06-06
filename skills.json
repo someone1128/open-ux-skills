@@ -6,20 +6,26 @@
     "en",
     "zh-CN"
   ],
+  "prefix": "hzy-ux",
   "skills": [
-    "ai-assisted-workflow-review",
-    "complexity-allocation-ux",
-    "interaction-model-explorer",
-    "interaction-polish-and-guidance",
-    "interaction-state-design",
-    "motion-ux-director",
-    "ux-change-proposal",
-    "ux-flow-review",
-    "ux-maturity-router",
-    "ux-pattern-case-library",
-    "ux-regression-check",
-    "ux-stop-rule",
-    "value-and-trust-ux-review"
+    "hzy-ux-maturity-router",
+    "hzy-ux-stop-rule",
+    "hzy-ux-interaction-model-explorer",
+    "hzy-ux-flow-review",
+    "hzy-ux-complexity-allocation",
+    "hzy-ux-interaction-state-design",
+    "hzy-ux-interaction-polish-guidance",
+    "hzy-ux-motion-director",
+    "hzy-ux-pattern-case-library",
+    "hzy-ux-ai-assisted-workflow-review",
+    "hzy-ux-value-trust-review",
+    "hzy-ux-change-proposal",
+    "hzy-ux-regression-check",
+    "hzy-ux-accessibility-review",
+    "hzy-ux-mobile-responsive-review",
+    "hzy-ux-information-architecture-review",
+    "hzy-ux-copy-microcopy-review"
   ],
-  "created_at": "2026-05-27T13:36:32.236313Z"
+  "created_at": "2026-05-27T13:36:32.236313Z",
+  "updated_at": "2026-06-06T00:00:00.000000Z"
 }
