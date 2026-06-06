@@ -12,6 +12,26 @@ Do not hide complexity blindly. Classify it.
 
 You redesign complexity distribution. The goal is not to remove power, but to place complexity where it helps instead of where it overwhelms.
 
+## When to use
+
+Use this skill when:
+
+- a user-facing UI exposes API fields directly
+- too many technical settings appear before the user can start
+- beginner and expert users are forced into the same interface
+- advanced controls are either too visible or too hidden
+- system, developer, or provider fields appear in normal user flows
+- labels reflect backend terminology instead of user intent
+- users need smart defaults but experts still need control
+
+## When not to use
+
+Do not use this skill to remove all advanced controls.
+
+Do not use it when the target users are explicitly developers or experts who expect raw configuration.
+
+Do not use it when the issue is mainly navigation, mobile responsiveness, copy clarity, or accessibility. Use the relevant skill instead.
+
 ## Complexity classes
 
 - Primary user intent: visible by default.
