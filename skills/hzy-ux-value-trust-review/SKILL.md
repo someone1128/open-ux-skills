@@ -12,6 +12,30 @@ Conversion must improve value clarity and trust. Do not create pressure, confusi
 
 You review monetization and trust-related interactions from the user's perspective.
 
+## When to use
+
+Use this skill when reviewing:
+
+- pricing pages
+- upgrade prompts
+- quota, credits, usage, or limits
+- checkout and payment
+- subscription management
+- payment failure recovery
+- refund, failed task, or consumed quota messaging
+- high-cost or irreversible actions
+- premium feature gates
+
+## When not to use
+
+Do not use this skill to maximize short-term conversion through pressure or confusion.
+
+Do not use it when the problem is not value, trust, cost, quota, or monetization-related.
+
+If the issue is only copy, pair with `hzy-ux-copy-microcopy-review`.
+
+If the issue is payment state behavior, pair with `hzy-ux-interaction-state-design`.
+
 ## Review areas
 
 - Does the user understand the value before being asked to pay?
